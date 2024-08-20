@@ -1,0 +1,35 @@
+:root {
+  --clr-primary-600: hsl(5, 85%, 63%);
+  --clr-primary-400: hsl(35, 77%, 62%);
+  --clr-neutral-900: hsl(240, 100%, 5%);
+  --clr-neutral-700: hsl(236, 13%, 42%);
+  --clr-neutral-300: hsl(233, 8%, 79%);
+  --clr-neutral-100: hsl(36, 100%, 99%);
+
+  --ff-primary: "Inter", sans-serif;
+  --ff-body: var(--ff-primary);
+
+  --fs-500: 0.9375rem;
+  --fs-600: 16px;
+
+  --fs-body: var(--fs-500);
+
+  --fw-regular: 400;
+  --fw-semi-bold: 700;
+  --fw-bold: 800;
+
+  --fw-body: var(--fw-regular);
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-body);
+}
+
+.container {
+  --max-width: 1000px;
+  --padding: 1rem;
+  width: min(var(--max-width), calc(100% - (var(--padding * 2))));
+  margin-inline: auto;
+}
